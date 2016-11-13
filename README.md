@@ -20,7 +20,7 @@ https://claudiajs.com/.
 
 ## Dependencies
 
-This bot uses the simple Pingdom cache described at https://github.com/andypowe11/AWS-Lambda-Pingdom-cache. This must be installed and running prior to using this bot.
+This bot uses the simple Pingdom cache described at https://github.com/andypowe11/AWS-Lambda-Pingdom-cache. This must be installed and running prior to using this bot. I suggest updating the cache at least every 5 minutes.
 
 ## Installation
 

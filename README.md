@@ -22,6 +22,8 @@ This bot uses the simple Pingdom cache described at https://github.com/andypowe1
 
 ## Installation
 
+The Lambda function that does the backend work for this skill is deployed and managed using Claudia.js.
+
 Install Claudia.js with:
 
     npm install claudia -g
@@ -30,7 +32,7 @@ Create a project folder. Go into it and type:
 
     npm init
 
-Give your bot a name - e.g. 'pingdom' - and description
+Give your bot a name - e.g. 'pingdom-alexa' - and description
 and put your email address
 as author. Leave everything else as is. Then install the dependencies with:
 
@@ -41,7 +43,7 @@ as author. Leave everything else as is. Then install the dependencies with:
 
 Put lambda.js in the project folder.
 
-Edit the 5 variables at the top of the file:
+Edit the 5 variables at the top of the lambda.js file:
 
 | Variable | Description |
 |----------|-------------|
@@ -66,9 +68,9 @@ Follow the steps to create a custom Alexa skill at https://developer.amazon.com/
 
 Create a custom slot called LIST_OF_WEBSITES and populate it with the names of all your Pingdom checks.
 
-Use the ARN of your new Lambda function as the Endpoint of the new skill.
+Use the ARN of your new Lambda function as the 'Endpoint' of the new skill.
 
-That's it, you're pretty much done. You do not need to publish this skill to use it yourself.
+That's it! You're pretty much done. You do not need to publish this skill to use it yourself.
 
 If you modify the lambda.js code, you can redeploy with:
 

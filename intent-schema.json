@@ -1,0 +1,43 @@
+{
+  "intents": [
+    {
+      "intent": "NullIntent"
+    },
+    {
+      "intent": "OverviewIntent"
+    },
+    {
+      "intent": "ThanksIntent"
+    },
+    {
+      "intent": "SummaryIntent",
+      "slots": [
+        {
+          "name": "Website",
+          "type": "LIST_OF_WEBSITES"
+        }
+      ]
+    },
+    {
+      "intent": "SetWebsiteIntent",
+      "slots": [
+        {
+          "name": "Website",
+          "type": "LIST_OF_WEBSITES"
+        }
+      ]
+    },
+    {
+      "intent": "GetWebsiteIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    }
+  ]
+}

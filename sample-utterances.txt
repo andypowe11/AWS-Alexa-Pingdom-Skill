@@ -1,0 +1,25 @@
+NullIntent null
+OverviewIntent overview
+OverviewIntent give me an overview
+OverviewIntent give me an overview of all websites
+OverviewIntent all
+OverviewIntent how are things
+OverviewIntent how's it looking'
+SummaryIntent summary
+SummaryIntent summary {Website}
+SummaryIntent get a summary
+SummaryIntent get a summary for {Website}
+SummaryIntent get me a summary
+SummaryIntent get me a summary for {Website}
+SummaryIntent give me a summary
+SummaryIntent give me a summary for {Website}
+SetWebsiteIntent my current website is {Website}
+SetWebsiteIntent set my current website to {Website}
+SetWebsiteIntent set current website to {Website}
+SetWebsiteIntent website {Website}
+GetWebsiteIntent what is my current website
+ThanksIntent thanks
+ThanksIntent thank you
+AMAZON.HelpIntent help
+AMAZON.CancelIntent cancel
+AMAZON.StopIntent stop

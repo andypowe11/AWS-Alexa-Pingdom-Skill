@@ -1,6 +1,6 @@
 # AWS Alexa Pingdom Skill
 
-An Alexa skill to find out the status of any websites you monitor with Pingdom, built using Claudia.js and the Alexa Skills Kit. The following Alexa commands are available:
+An Alexa skill that can be used to find out the status of any websites you monitor with Pingdom, built using Claudia.js and the Alexa Skills Kit. The following Alexa commands are available:
 
     Alexa, ask Pingdom for an overview
     Alexa, ask Pingdom for a summary of website_name
@@ -64,9 +64,11 @@ In AWS, set your new Lambda function to trigger from the Alexa Skills Kit.
 
 Follow the steps to create a custom Alexa skill at https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/overviews/steps-to-build-a-custom-skill. The intent schema and sample utterances are available as intent-schema.json and sample-utterances.txt respectively.
 
+Create a custom slot called LIST_OF_WEBSITES and populate it with the names of all your Pingdom checks.
+
 Use the ARN of your new Lambda function as the Endpoint of the new skill.
 
-That's it, you're pretty much done.
+That's it, you're pretty much done. You do not need to publish this skill to use it yourself.
 
 If you modify the lambda.js code, you can redeploy with:
 

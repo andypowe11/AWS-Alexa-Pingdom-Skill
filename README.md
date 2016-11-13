@@ -1,6 +1,8 @@
 # AWS Alexa Pingdom Skill
 
-An Alexa skill that can be used to find out the status of any websites you monitor with Pingdom, built using Claudia.js and the Alexa Skills Kit. The following Alexa commands are available:
+An Alexa skill that can be used to find out the status of any websites you monitor with Pingdom, built using Claudia.js and the Alexa Skills Kit.
+
+The following Alexa commands are available:
 
     Alexa, ask Pingdom for an overview
     Alexa, ask Pingdom for a summary of website_name
@@ -22,7 +24,10 @@ This bot uses the simple Pingdom cache described at https://github.com/andypowe1
 
 ## Installation
 
-The Lambda function that does the backend work for this skill is deployed and managed using Claudia.js.
+The Lambda function that does the backend work for this skill is written in Node.js and
+runs in AWS Lambda.
+It is deployed and managed using Claudia.js - see
+https://claudiajs.com/.
 
 Install Claudia.js with:
 

@@ -1,12 +1,11 @@
 # AWS Alexa Pingdom Skill
 
-An Alexa skill to find out the status of any websites you monitor with Pingdom, built using Claudia.js and the Alexa Skills Kit..
-The following Alexa commands are available:
+An Alexa skill to find out the status of any websites you monitor with Pingdom, built using Claudia.js and the Alexa Skills Kit. The following Alexa commands are available:
 
     Alexa, ask Pingdom for an overview
     Alexa, ask Pingdom for a summary of website_name
 
-or you can jusy say
+plus one or two other things (see the intent schema). Or you can jusy say:
 
     Alexa, open Pingdom
 
@@ -53,25 +52,23 @@ Edit the 5 variables at the top of the file:
 | APPLICATIONID | The application ID of your Alexa skill |
 
 Follow https://claudiajs.com/tutorials/installing.html to give Claudia.js
-enough AWS access to deploy the Lambda function and API Gateway.
+enough AWS access to deploy the Lambda function.
 
-Create a new IAM policy called 'basicalexaskill' based on basicalexaskill.json. Create an IAM role called 'basicalexaskill' and attach the policy to it.
+In your AWS account, create a new IAM policy called 'basicalexaskill' based on basicalexaskill.json. Then create an IAM role called 'basicalexaskill' and attach the policy to it.
 
-Then deploy your bot to AWS with the following command:
+Deploy your bot to AWS with the following command:
 
     claudia create --region us-east-1 --handler lambda.handler --role basicalexaskill
 
-Follow the steps to create a custom Alexa skill at https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/overviews/steps-to-build-a-custom-skill. The intent schema and sample utterances are available...
+In AWS, set your new Lambda function to trigger from the Alexa Skills Kit.
 
+Follow the steps to create a custom Alexa skill at https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/overviews/steps-to-build-a-custom-skill. The intent schema and sample utterances are available as intent-schema.json and sample-utterances.txt respectively.
 
-Go to https://api.slack.com/ to configure a new integration
-for your Slack team. Then run:
+Use the ARN of your new Lambda function as the Endpoint of the new skill.
 
-    claudia update --region eu-west-1 --api-module bot --timeout 120 --allow-recursion --configure-slack-slash-command
+That's it, you're pretty much done.
 
-That's it, you're done.
-
-If you modify the bot.js code, you can redeploy with:
+If you modify the lambda.js code, you can redeploy with:
 
     claudia update
 

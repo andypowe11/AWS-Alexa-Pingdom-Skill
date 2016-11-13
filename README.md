@@ -55,9 +55,11 @@ Edit the 5 variables at the top of the file:
 Follow https://claudiajs.com/tutorials/installing.html to give Claudia.js
 enough AWS access to deploy the Lambda function and API Gateway.
 
+Create a new IAM policy called 'basicalexaskill' based on basicalexaskill.json. Create an IAM role called 'basicalexaskill' and attach the policy to it.
+
 Then deploy your bot to AWS with the following command:
 
-    claudia create --region us-east-1 --handler lambda.handler --role ap-basicalexaskill
+    claudia create --region us-east-1 --handler lambda.handler --role basicalexaskill
 
 Follow the steps to create a custom Alexa skill at https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/overviews/steps-to-build-a-custom-skill. The intent schema and sample utterances are available...
 

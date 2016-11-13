@@ -54,7 +54,7 @@ Edit the 5 variables at the top of the file:
 Follow https://claudiajs.com/tutorials/installing.html to give Claudia.js
 enough AWS access to deploy the Lambda function.
 
-In your AWS account, create a new IAM policy called 'basicalexaskill' based on basicalexaskill.json. Then create an IAM role called 'basicalexaskill' and attach the policy to it.
+In your AWS account, create a new IAM policy called 'basicalexaskill' based on basicalexaskill-policy.json. Then create an IAM role called 'basicalexaskill' and attach the policy to it.
 
 Deploy your bot to AWS with the following command:
 
